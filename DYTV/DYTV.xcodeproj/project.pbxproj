@@ -13,6 +13,11 @@
 		1D4EA2751F47E9B80014B408 /* DYTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA2741F47E9B80014B408 /* DYTVTests.swift */; };
 		1D4EA2801F47E9B80014B408 /* DYTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA27F1F47E9B80014B408 /* DYTVUITests.swift */; };
 		1D4EA28E1F47EAF80014B408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA28D1F47EAF80014B408 /* Assets.xcassets */; };
+		1D4EA2981F4850310014B408 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2961F4850310014B408 /* Home.storyboard */; };
+		1D4EA29B1F48505E0014B408 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2991F48505E0014B408 /* Live.storyboard */; };
+		1D4EA29E1F48507E0014B408 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA29C1F48507E0014B408 /* Follow.storyboard */; };
+		1D4EA2A11F4850910014B408 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA29F1F4850910014B408 /* Profile.storyboard */; };
+		1D4EA2A31F4851F40014B408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA2A21F4851F40014B408 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		1D4EA27F1F47E9B80014B408 /* DYTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTVUITests.swift; sourceTree = "<group>"; };
 		1D4EA2811F47E9B80014B408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4EA28D1F47EAF80014B408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D4EA2971F4850310014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		1D4EA29A1F48505E0014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
+		1D4EA29D1F48507E0014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		1D4EA2A01F4850910014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		1D4EA2A21F4851F40014B408 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,6 @@
 				1D4EA28F1F47EE500014B408 /* Classes */,
 				1D4EA25F1F47E9B70014B408 /* AppDelegate.swift */,
 				1D4EA28D1F47EAF80014B408 /* Assets.xcassets */,
-				1D4EA2631F47E9B70014B408 /* Main.storyboard */,
 				1D4EA2681F47E9B70014B408 /* LaunchScreen.storyboard */,
 				1D4EA26B1F47E9B70014B408 /* Info.plist */,
 			);
@@ -139,6 +148,7 @@
 		1D4EA2901F47EE500014B408 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D4EA2961F4850310014B408 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -153,6 +163,7 @@
 		1D4EA2921F47EE500014B408 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				1D4EA29C1F48507E0014B408 /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 		1D4EA2931F47EE500014B408 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1D4EA29F1F4850910014B408 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 		1D4EA2941F47EE500014B408 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				1D4EA2991F48505E0014B408 /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -174,6 +187,8 @@
 		1D4EA2951F47EE500014B408 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1D4EA2631F47E9B70014B408 /* Main.storyboard */,
+				1D4EA2A21F4851F40014B408 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -288,6 +303,10 @@
 				1D4EA26A1F47E9B70014B408 /* LaunchScreen.storyboard in Resources */,
 				1D4EA28E1F47EAF80014B408 /* Assets.xcassets in Resources */,
 				1D4EA2651F47E9B70014B408 /* Main.storyboard in Resources */,
+				1D4EA29B1F48505E0014B408 /* Live.storyboard in Resources */,
+				1D4EA2981F4850310014B408 /* Home.storyboard in Resources */,
+				1D4EA2A11F4850910014B408 /* Profile.storyboard in Resources */,
+				1D4EA29E1F48507E0014B408 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4EA2601F47E9B70014B408 /* AppDelegate.swift in Sources */,
+				1D4EA2A31F4851F40014B408 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +374,7 @@
 				1D4EA2641F47E9B70014B408 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1D4EA2681F47E9B70014B408 /* LaunchScreen.storyboard */ = {
@@ -362,6 +383,42 @@
 				1D4EA2691F47E9B70014B408 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1D4EA2961F4850310014B408 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4EA2971F4850310014B408 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		1D4EA2991F48505E0014B408 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4EA29A1F48505E0014B408 /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		1D4EA29C1F48507E0014B408 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4EA29D1F48507E0014B408 /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		1D4EA29F1F4850910014B408 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4EA2A01F4850910014B408 /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -464,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rick.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rick.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
