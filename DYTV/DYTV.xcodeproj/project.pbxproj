@@ -10,10 +10,10 @@
 		1D4EA2601F47E9B70014B408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA25F1F47E9B70014B408 /* AppDelegate.swift */; };
 		1D4EA2621F47E9B70014B408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA2611F47E9B70014B408 /* ViewController.swift */; };
 		1D4EA2651F47E9B70014B408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2631F47E9B70014B408 /* Main.storyboard */; };
-		1D4EA2671F47E9B70014B408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2661F47E9B70014B408 /* Assets.xcassets */; };
 		1D4EA26A1F47E9B70014B408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2681F47E9B70014B408 /* LaunchScreen.storyboard */; };
 		1D4EA2751F47E9B80014B408 /* DYTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA2741F47E9B80014B408 /* DYTVTests.swift */; };
 		1D4EA2801F47E9B80014B408 /* DYTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA27F1F47E9B80014B408 /* DYTVUITests.swift */; };
+		1D4EA28E1F47EAF80014B408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA28D1F47EAF80014B408 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		1D4EA25F1F47E9B70014B408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4EA2611F47E9B70014B408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D4EA2641F47E9B70014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1D4EA2661F47E9B70014B408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4EA2691F47E9B70014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4EA26B1F47E9B70014B408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4EA2701F47E9B80014B408 /* DYTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		1D4EA27B1F47E9B80014B408 /* DYTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4EA27F1F47E9B80014B408 /* DYTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTVUITests.swift; sourceTree = "<group>"; };
 		1D4EA2811F47E9B80014B408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4EA28D1F47EAF80014B408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			children = (
 				1D4EA25F1F47E9B70014B408 /* AppDelegate.swift */,
 				1D4EA2611F47E9B70014B408 /* ViewController.swift */,
+				1D4EA28D1F47EAF80014B408 /* Assets.xcassets */,
 				1D4EA2631F47E9B70014B408 /* Main.storyboard */,
-				1D4EA2661F47E9B70014B408 /* Assets.xcassets */,
 				1D4EA2681F47E9B70014B408 /* LaunchScreen.storyboard */,
 				1D4EA26B1F47E9B70014B408 /* Info.plist */,
 			);
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4EA26A1F47E9B70014B408 /* LaunchScreen.storyboard in Resources */,
-				1D4EA2671F47E9B70014B408 /* Assets.xcassets in Resources */,
+				1D4EA28E1F47EAF80014B408 /* Assets.xcassets in Resources */,
 				1D4EA2651F47E9B70014B408 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +410,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rick.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rick.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
