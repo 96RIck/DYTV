@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="PLT-bc-39z">
             <objects>
-                <viewController id="soT-ao-MFx" sceneMemberID="viewController">
+                <viewController id="soT-ao-MFx" customClass="HomeViewController" customModule="DYTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fnv-HN-geK"/>
                         <viewControllerLayoutGuide type="bottom" id="oew-y3-ovw"/>

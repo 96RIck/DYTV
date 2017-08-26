@@ -17,7 +17,9 @@
 		1D4EA29B1F48505E0014B408 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA2991F48505E0014B408 /* Live.storyboard */; };
 		1D4EA29E1F48507E0014B408 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA29C1F48507E0014B408 /* Follow.storyboard */; };
 		1D4EA2A11F4850910014B408 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4EA29F1F4850910014B408 /* Profile.storyboard */; };
-		1D4EA2A31F4851F40014B408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EA2A21F4851F40014B408 /* MainViewController.swift */; };
+		1D57BEA71F4885460049CB1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D57BEA41F4885460049CB1F /* MainViewController.swift */; };
+		1D57BEA91F48864B0049CB1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D57BEA81F48864B0049CB1F /* HomeViewController.swift */; };
+		1DF93D661F5151C2009CCDC6 /*  UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF93D651F5151C2009CCDC6 /*  UIBarButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		1D4EA29A1F48505E0014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		1D4EA29D1F48507E0014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		1D4EA2A01F4850910014B408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
-		1D4EA2A21F4851F40014B408 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1D57BEA41F4885460049CB1F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1D57BEA81F48864B0049CB1F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1DF93D651F5151C2009CCDC6 /*  UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " UIBarButtonItem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,9 @@
 		1D4EA2901F47EE500014B408 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1D4EA2961F4850310014B408 /* Home.storyboard */,
+				1D57BE9E1F4884990049CB1F /* Model */,
+				1D57BE9F1F4884990049CB1F /* View */,
+				1D57BE9D1F4884990049CB1F /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 		1D4EA2911F47EE500014B408 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1DF93D641F51517E009CCDC6 /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -187,10 +194,65 @@
 		1D4EA2951F47EE500014B408 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				1D4EA2631F47E9B70014B408 /* Main.storyboard */,
-				1D4EA2A21F4851F40014B408 /* MainViewController.swift */,
+				1D57BEA51F4885460049CB1F /* Model */,
+				1D57BEA61F4885460049CB1F /* View */,
+				1D57BEA31F4885460049CB1F /* Controller */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		1D57BE9D1F4884990049CB1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D4EA2961F4850310014B408 /* Home.storyboard */,
+				1D57BEA81F48864B0049CB1F /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D57BE9E1F4884990049CB1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D57BE9F1F4884990049CB1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D57BEA31F4885460049CB1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D4EA2631F47E9B70014B408 /* Main.storyboard */,
+				1D57BEA41F4885460049CB1F /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D57BEA51F4885460049CB1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D57BEA61F4885460049CB1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF93D641F51517E009CCDC6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1DF93D651F5151C2009CCDC6 /*  UIBarButtonItem.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4EA2601F47E9B70014B408 /* AppDelegate.swift in Sources */,
-				1D4EA2A31F4851F40014B408 /* MainViewController.swift in Sources */,
+				1D57BEA71F4885460049CB1F /* MainViewController.swift in Sources */,
+				1D57BEA91F48864B0049CB1F /* HomeViewController.swift in Sources */,
+				1DF93D661F5151C2009CCDC6 /*  UIBarButtonItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +438,7 @@
 				1D4EA2641F47E9B70014B408 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		1D4EA2681F47E9B70014B408 /* LaunchScreen.storyboard */ = {
@@ -391,7 +455,7 @@
 				1D4EA2971F4850310014B408 /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 		1D4EA2991F48505E0014B408 /* Live.storyboard */ = {
@@ -616,6 +680,7 @@
 				1D4EA2861F47E9B80014B408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D4EA2871F47E9B80014B408 /* Build configuration list for PBXNativeTarget "DYTVTests" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +689,7 @@
 				1D4EA2891F47E9B80014B408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D4EA28A1F47E9B80014B408 /* Build configuration list for PBXNativeTarget "DYTVUITests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +698,7 @@
 				1D4EA28C1F47E9B80014B408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
